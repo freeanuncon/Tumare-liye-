@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Ye Tumhare Liye, Kreeti</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle, #3a1c71, #d76d77, #ffaf7b);
+      color: #fff;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInText 3s ease-in-out;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      animation: fadeInText 4s ease-in-out;
+    }
+    .gallery {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      animation: fadeIn 3s ease-in;
+    }
+    .gallery img {
+      width: 220px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    audio {
+      margin-top: 2rem;
+    }
+    .ending {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffe6f0;
+      animation: fadeInText 5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To Ye Tumhare Liye, Kreeti</h1>
+    <p>Jab tumhari muskaan banti ho meri subah...</p>
+    <p>Jab tumhari aankhein ban jaati hain meri shaam...</p>
+    <p>Tab main samajh jaata hoon... main jee raha hoon, sirf tumhare liye.</p>
+
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Kreeti 1" />
+      <img src="photo2.jpg" alt="Kreeti 2" />
+      <img src="photo3.jpg" alt="Kreeti 3" />
+      <img src="photo4.jpg" alt="Kreeti 4" />
+      <img src="photo5.jpg" alt="Kreeti 5" />
+    </div>
+
+    <audio controls autoplay loop>
+      <source src="deewana-kar-raha-hai.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <div class="ending">
+      Tum ho, toh sab kuch hai.<br />Happy Birthday, Kreeti.
+    </div>
+  </div>
+</body>
+</html>
